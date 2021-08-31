@@ -1,0 +1,9 @@
+package com.nilatech.model;
+
+import java.util.List;
+
+public class Flights {
+	
+	private List<Flight> flights;
+
+}

@@ -1,0 +1,20 @@
+package com.nilatech.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class FlightService {
+	
+	public String invokeUnitedFlightApi() {
+		
+		String apiUrl="http://mu.mulesoft-training.com/essentials/united/flights/";
+		
+		RestTemplate template=new RestTemplate();
+		ResponseEntity<String> responseEntity = template.getForEntity(apiUrl, String.class);
+		String body = responseEntity.getBody();
+		return body;
+	}
+
+}

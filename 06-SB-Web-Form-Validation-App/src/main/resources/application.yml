@@ -1,0 +1,11 @@
+spring:
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+
+server:
+  port: 8085 
+      
+
+  

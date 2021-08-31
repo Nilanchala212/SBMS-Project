@@ -1,0 +1,2 @@
+spring:  mvc:    view:      prefix: /views/      suffix: .jsp      server:  port: 8082      
+
